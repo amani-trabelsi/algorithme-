@@ -1,0 +1,47 @@
+algorithm sentence 
+
+var str:string;
+c:char;
+length:integer:=0;
+nb-word:integer:=0;
+nb-voy:integer:=0;
+
+Begin
+
+write(give me a sentence pls);
+read(str);
+
+
+while(c<> '.')do
+
+length+=1;
+
+if(c==' ')then
+nb-word ++;
+end if
+
+if(touppercase(c)==touppercase({a,o,u,w,e,y})then
+nb-voy+=1;
+end if;
+
+end while;
+
+write(nb-voy)
+write(nb-word)
+write(length)
+
+END.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
